@@ -1,0 +1,44 @@
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 73px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    background: linear-gradient(180deg, #1FF2FF 0%, #27F9E5 52.66%, #2FFFCD 100%);
+    border-radius: 8px;
+    
+}
+.btn div:hover{
+    color:#3B48D0;
+}
+.btn div:active{
+    color:#FFFFFF;
+}
+
+.btn div{
+    font-weight: bold;
+    font-size: 20px;
+    color: #0A1482;
+    display: flex;
+
+}
+
+
+.btnnotactive{
+
+    opacity: 0.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 73px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    background: linear-gradient(180deg, #1FF2FF 0%, #27F9E5 52.66%, #2FFFCD 100%);
+    border-radius: 8px;
+    
+}

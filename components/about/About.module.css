@@ -1,0 +1,37 @@
+
+.header{
+    text-align: center;
+}
+.content{
+    display: flex;
+  
+}
+.title, .mentors {
+    width: 50%;
+}
+.title{
+    display: flex;
+    padding-top: 100px;
+
+
+
+    
+}
+.namementors{
+    background-image: url('./media//lines.svg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 70% ;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.mentor{
+    margin-top: 160px; 
+}
+.mentor:nth-child(2){
+    margin-top: 110px;
+}
+.aboutmentor{
+    margin-top: 16px;
+}

@@ -1,0 +1,22 @@
+.programms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 54px;
+}
+.programm{
+    background-image: url('./media/bglogoprogramm.png');
+    background-repeat: no-repeat;
+    width: 181px;
+    height: 230px;
+    align-items: center;
+    padding-top: 15px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.logoprogramm{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,52 @@
+.review{
+    display: flex;
+}
+
+.text{
+    width: 30%;
+    padding-top: 150px;
+    
+}
+.photosbox{
+    width: 70%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    
+}
+.pages{
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    margin-top: 10px;
+}
+.currentpage,.allpages{
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.currentpage{
+    font-size: 24px;
+}
+.allpages{
+    font-size: 16px;
+    padding-left: 5px;
+}
+.optionpage{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    
+}
+.optionpage img{
+    cursor: pointer;
+}
+.photos{
+    display: flex;
+    justify-content: space-between;
+}

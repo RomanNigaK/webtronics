@@ -1,0 +1,40 @@
+.gallery {
+    margin-top: 50px;
+    display: grid;
+    grid-template-areas: "text img1 img1 img2"
+        "img3 img1 img1 img4"
+        "img3 text2 text2 text2";
+    gap: 20px;
+}
+
+.text {
+    grid-area: text;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+
+}
+
+.img1 {
+    grid-area: img1;
+
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+.text2 {
+    grid-area: text2;
+    display: flex;
+    align-items: flex-end;
+}
+
