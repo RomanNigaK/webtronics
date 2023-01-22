@@ -7,40 +7,45 @@ import Paragraph from '../commons/paragraph/Paragraph';
 import style from './Steps.module.css';
 export default function Steps() {
     const steps = useSelector((store: RootState) => getSteps(store));
-console.log(steps)
+    console.log(steps)
 
     return (
-        <div className={style.steps}>
-            <a id="steps"></a>
-            <Header h={2}>Steps</Header>
-            <div className={style.wood}>
-                {
-                    steps.map((el) => {
-                        return (
-                            <div className={style.couple}>
+        <section>
+            <div className={style.steps}>
+                <a id="steps"></a>
+                <Header h={2}>Steps</Header>
+                <div className={style.wood}>
+                    {
+                        steps.map((el) => {
+                            return (
+                                <div className={style.couple}>
 
-                                <div className={style.stepleft}>
-                                    <div className={style.boxinfostep}>
-                                        <div className={style.infostep}>
-
-                                            <Info step={el[0].step} header={el[0].header} description={el[0].title} />
+                                    <div className={style.stepleft}>
+                                        <div className={style.boxinfostep}>
+                                            <div className={style.infostep}>
+                                                <article>
+                                                    <Info step={el[0].step} header={el[0].header} description={el[0].title} />
+                                                </article>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className={style.stepright}>
+                                        <div className={style.boxinfostep}>
+                                            <div className={style.infostep}>
+                                                <article>
+                                                    <Info step={el[1].step} header={el[1].header} description={el[1].title} />
+                                                </article>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className={style.stepright}>
-                                    <div className={style.boxinfostep}>
-                                        <div className={style.infostep}>
-                                            <Info step={el[1].step} header={el[1].header} description={el[1].title} />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        )
+                            )
 
-                    })
-                }
+                        })
+                    }
+                </div>
             </div>
-        </div>
+        </section>
     )
 }
 
