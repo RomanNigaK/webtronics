@@ -33,9 +33,10 @@ export default function Home() {
 
         
     <div style={style}>
-      <MainMenu></MainMenu>
+      <MainMenu/>
       <Title/>
       <Gap/>
+      <main>
       <About/>
       <Gap/>
       <Programm/>
@@ -47,11 +48,10 @@ export default function Home() {
       <Review/>
       <Gap/>
       <Gallery/>
-   
       <Gap/>
       <Contact/>
       <Gap/>
-      
+      </main>
     </div>
     <Footer />
 
