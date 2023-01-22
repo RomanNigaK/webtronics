@@ -11,50 +11,53 @@ import js from './media/js.png';
 import style from './Programm.module.css';
 export default function Programming() {
     return (
-        <div className={style.programming}>
-            <a id="programm"></a>
-            <Header h={2}>
-                Programming<br />technologies
-            </Header>
-            <Paragraph textAlign='center'>
-                By the end, you’ll have the portfolio and interview skills <br />
-                you need to start your new career.
-            </Paragraph>
-            <div className={style.programms}>
-                <div className={style.programm}>
-                    <div className={style.logoprogramm}>
-                        <Image src={angular} alt="angular" />
-                    </div>
-                    <Header h={4} fontWeight='500'>
-                        Angular
+        <section>
+            <div className={style.programming}>
+                <a id="programm"></a>
+                <article>
+                    <Header h={2}>
+                        Programming<br />technologies
                     </Header>
-                </div>
-                <div className={style.programm}>
-                    <div className={style.logoprogramm}>
-                        <Image src={react} alt="react" />
+                    <Paragraph textAlign='center'>
+                        By the end, you’ll have the portfolio and interview skills <br />
+                        you need to start your new career.
+                    </Paragraph>
+                </article>
+                <div className={style.programms}>
+                    <div className={style.programm}>
+                        <div className={style.logoprogramm}>
+                            <Image src={angular} alt="angular" />
+                        </div>
+                        <Header h={4} fontWeight='500'>
+                            Angular
+                        </Header>
                     </div>
-                    <Header h={4} fontWeight='500'>
-                        React
-                    </Header>
-                </div>
-                <div className={style.programm}>
-                    <div className={style.logoprogramm}>
-                        <Image src={vue} alt="vue" />
+                    <div className={style.programm}>
+                        <div className={style.logoprogramm}>
+                            <Image src={react} alt="react" />
+                        </div>
+                        <Header h={4} fontWeight='500'>
+                            React
+                        </Header>
                     </div>
-                    <Header h={4} fontWeight='500'>
-                        Vue.js
-                    </Header>
-                </div>
-                <div className={style.programm}>
-                    <div className={style.logoprogramm}>
-                        <Image src={js} alt="javascript" />
+                    <div className={style.programm}>
+                        <div className={style.logoprogramm}>
+                            <Image src={vue} alt="vue" />
+                        </div>
+                        <Header h={4} fontWeight='500'>
+                            Vue.js
+                        </Header>
                     </div>
-                    <Header h={4} fontWeight="500">
-                        JavaScript
-                    </Header>
+                    <div className={style.programm}>
+                        <div className={style.logoprogramm}>
+                            <Image src={js} alt="javascript" />
+                        </div>
+                        <Header h={4} fontWeight="500">
+                            JavaScript
+                        </Header>
+                    </div>
                 </div>
             </div>
-        </div>
-
+        </section>
     )
 }

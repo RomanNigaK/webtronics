@@ -7,11 +7,11 @@ import Programm from '../components/programm/Programm'
 import Steps from '../components/steps/Steps'
 import Gap from '../components/commons/gap/Gap'
 import Faq from '../components/faq/Faq'
-import Review from '../components/review/Preview'
+import Review from '../components/review/Rreview'
 import Gallery from '../components/gallery/Gallery'
 import Contact from '../components/contact/Contact'
 import Footer from '../components/footer/Footer'
-import Gallery2 from '../components/gallery/Gallery'
+
 
 
 

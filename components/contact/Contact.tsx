@@ -60,58 +60,67 @@ export default function Contact() {
             body: JSON.stringify(data)
         })
             .then(response => response.json())
-            .then(response => console.log(JSON.stringify(response)))
-
-
     }
 
 
     return (
-        <div className={style.contact}>
-            <a id="contact"></a>
-            <div className={style.boxcontact}>
-                <div className={style.formcontact}>
-                    <div>
+        <section>
+            <div className={style.contact}>
+                <a id="contact"></a>
+                <div className={style.boxcontact}>
+                    <div className={style.formcontact}>
                         <div>
-                            <div className={style.header}>
-                                <Header h={2}>
-                                    Contact  us
-                                </Header>
-                                <Paragraph textAlign='center'>
-                                    Do you have any kind of help please contact with us.
-                                </Paragraph>
-                            </div>
-                            <div className={style.inputs}>
-                                <form onSubmit={handleSubmit(onSubmit)}>
-                                    <Input placeholder='Name' type='text' name="name"
-                                        register={register}
-                                        error={errors.name?.message}
-                                        setdataForm={setdataForm}
-                                        dataForm={dataForm}
-                                        value={dataForm.name}
-                                    />
+                            <div>
+                                <div className={style.header}>
+                                    <Header h={2}>
+                                        Contact  us
+                                    </Header>
+                                    <Paragraph textAlign='center'>
+                                        Do you have any kind of help please contact with us.
+                                    </Paragraph>
+                                </div>
+                                <div className={style.inputs}>
+                                    <form onSubmit={handleSubmit(onSubmit)}>
+                                        <Input placeholder='Name'
+                                            type='text'
+                                            name="name"
+                                            register={register}
+                                            error={errors.name?.message}
+                                            setdataForm={setdataForm}
+                                            dataForm={dataForm}
+                                            value={dataForm.name}
+                                            />
 
-                                    <Input
-                                        placeholder='Phone' type='text' name="phone" register={register} error={errors.phone?.message}
-                                        setdataForm={setdataForm}
-                                        dataForm={dataForm} value={dataForm.phone} 
-                                        
-                                        />
-
-                                    <Input placeholder='E-mail' type='text' name="email" register={register} error={errors.email?.message}
-                                        setdataForm={setdataForm}
-                                        dataForm={dataForm} value={dataForm.email} />
-
-                                    <label htmlFor={isDataForm(dataForm) ? 'submit' : ''}>
-                                        <Btn text='Send' disabled={isDataForm(dataForm)} />
-                                    </label>
-                                    <Submit />
-                                </form>
+                                        <Input
+                                            placeholder='Phone'
+                                            type='text'
+                                            name="phone"
+                                            register={register}
+                                            error={errors.phone?.message}
+                                            setdataForm={setdataForm}
+                                            dataForm={dataForm}
+                                            value={dataForm.phone}
+                                            />
+                                        <Input placeholder='E-mail'
+                                            type='text'
+                                            name="email"
+                                            register={register}
+                                            error={errors.email?.message}
+                                            setdataForm={setdataForm}
+                                            dataForm={dataForm}
+                                            value={dataForm.email}
+                                            />
+                                        <label htmlFor={isDataForm(dataForm) ? 'submit' : ''}>
+                                            <Btn text='Send' disabled={isDataForm(dataForm)} />
+                                        </label>
+                                        <Submit />
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

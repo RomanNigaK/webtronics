@@ -8,8 +8,8 @@ import arrowright from './media/arrowright.svg';
 import Image from 'next/image';
 import { getCurrentPage } from '../../redux/selectors';
 import { RootState } from '../../redux/store';
-export default function Review() {
 
+export default function Review() {
     const [page, setpage] = useState(1)
     const { currentPage, quantity } = useSelector((state: RootState) => getCurrentPage(state, page));
     function navPage(p: 1 | -1) {
@@ -30,19 +30,21 @@ export default function Review() {
     if (!currentPage) return <Header h={2}>Not data</Header>
 
     return (
-        <>
+        <section>
             <a id="review"></a>
             <Header h={2}>
                 Review
             </Header>
             <div className={style.review}>
                 <div className={style.text}>
-                    <Header h={4} fontWeight="500" textAlign='left'>
-                        {currentPage.header}
-                    </Header>
-                    <Paragraph>
-                        {currentPage.text}
-                    </Paragraph>
+                    <article>
+                        <Header h={4} fontWeight="500" textAlign='left'>
+                            {currentPage.header}
+                        </Header>
+                        <Paragraph>
+                            {currentPage.text}
+                        </Paragraph>
+                    </article>
                 </div>
                 <div className={style.photosbox}>
                     <div className={style.nav}>
@@ -62,7 +64,7 @@ export default function Review() {
                     </div>
                 </div>
             </div>
-        </>
+        </section>
 
     )
 }
